@@ -3,14 +3,19 @@
 # - name: Join us!
 #   photo: "/image/people/empty.png"
 
-- name: Hyunyoung Lee
-  photo: "/image/people/hyunyounglee.jpg"
+# - name: Hyunyoung Lee
+#   photo: "/image/people/hyunyounglee.jpg"
 
-- name: Joohyun Park
-  photo: "/image/people/joohyunpark.jpg"
+# - name: Joohyun Park
+#   photo: "/image/people/joohyunpark.jpg"
 
-- name: Ayoung Kim
-  photo: "/image/people/ayoungkim.png"
+# - name: Ayoung Kim
+#   photo: "/image/people/ayoungkim.png"
 
-- name: Suhyeon Lee
-  photo: "/image/people/suhyeonlee.png"
+# - name: Suhyeon Lee
+#   photo: "/image/people/suhyeonlee.png"
+
+#- name: Sebin Jo
+#  photo: "/image/people/sebinjo.jpg"
+#  role: BS-MS Integrated student
+#  email:  030331c *at* jnu.ac.kr

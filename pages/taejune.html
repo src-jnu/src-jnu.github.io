@@ -5,51 +5,70 @@ title: Taejune Park
 
 <div class="faculty profile-page">
     <div class="container">
-        <div class="profile-card">
-            <div class="row profile-header">
-                <div class="col-sm-3 profile-avatar">
-                    <img src="../image/people/001_taejunepark.jpg" alt="Taejune Park" class="img-responsive">
+        <h1 class="lecture profile-page-title">Taejune Park</h1>
+
+        <div class="profile-hero">
+            <div class="row">
+                <div class="col-sm-4 profile-avatar">
+                    <img src="../image/people/001_taejunepark.jpg" alt="Taejune Park">
                 </div>
-                <div class="col-sm-9 profile-summary">
-                    <h1>{{ site.data.people.taejune.name }} (박태준)</h1>
+                <div class="col-sm-8 profile-summary">
+                    <p class="profile-eyebrow">Faculty Profile</p>
+                    <h2>{{ site.data.people.taejune.name }} <span>박태준</span></h2>
                     <h3>{{ site.data.people.taejune.role }}</h3>
-                    <p class="lead profile-affiliations">
-                        {% for affiliation in site.data.people.taejune.affiliations %}
+
+                    <p class="profile-affiliations">
+                    {% for affiliation in site.data.people.taejune.affiliations %}
                         {{ affiliation }}{% unless forloop.last %}<br>{% endunless %}
-                        {% endfor %}
+                    {% endfor %}
                     </p>
-                    <dl class="profile-meta">
-                        <dt>Office</dt>
-                        <dd>{{ site.data.people.taejune.contact.office }}</dd>
-                        <dt>Phone</dt>
-                        <dd>{{ site.data.people.taejune.contact.phone }}</dd>
-                        <dt>E-mail</dt>
-                        <dd><a href="mailto:{{ site.data.people.taejune.contact.email }}">{{ site.data.people.taejune.contact.email }}</a></dd>
-                        <dt>Google Scholar</dt>
-                        <dd><a href="{{ site.data.people.taejune.contact.scholar }}">{{ site.data.people.taejune.contact.scholar }}</a></dd>
-                    </dl>
+
+                    <ul class="profile-contact-list">
+                        <li>
+                            <strong>Office</strong>
+                            <span>{{ site.data.people.taejune.contact.office }}</span>
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            <span>{{ site.data.people.taejune.contact.phone }}</span>
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            <span><a href="mailto:{{ site.data.people.taejune.contact.email }}">{{ site.data.people.taejune.contact.email }}</a></span>
+                        </li>
+                        <li>
+                            <strong>Google Scholar</strong>
+                            <span><a href="{{ site.data.people.taejune.contact.scholar }}" target="_blank" rel="noopener">View profile</a></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="profile-bio">
-                <p>
-                    Taejune Park is an Associate Professor in the School of Artificial Intelligence at Chonnam National University.
-                    He received his Ph.D. in Computer Science from Korea Advanced Institute of Science and Technology (KAIST) under the supervision of
-                    <a href="https://nss.kaist.ac.kr/?page_id=29">Prof. Seungwon Shin</a>.
-                    He also earned an M.S. from KAIST and a B.S. from Korea Maritime and Ocean University (KMOU).
-                    Before joining JNU in 2021, he worked as a post-doctoral researcher at KAIST and participated in the Samsung Software Membership internship program at Samsung Electronics.
-                    His research interests include security in SDN/NFV environments, IoT, and data plane architecture.
-                </p>
+        <section class="profile-bio">
+            <p>
+                Taejune Park is an Associate Professor in the School of Artificial Intelligence at Chonnam National University.
+                He received his Ph.D. in Computer Science from Korea Advanced Institute of Science and Technology (KAIST) under the supervision of
+                <a href="https://nss.kaist.ac.kr/?page_id=29">Prof. Seungwon Shin</a>.
+                He also earned an M.S. from KAIST and a B.S. from Korea Maritime and Ocean University (KMOU).
+                Before joining JNU in 2021, he worked as a post-doctoral researcher at KAIST and participated in the Samsung Software Membership internship program at Samsung Electronics.
+                His research interests include security in SDN/NFV environments, IoT, and data plane architecture.
+            </p>
+            <div class="profile-tags" aria-label="Research interests">
+                <span>Security</span>
+                <span>SDN/NFV</span>
+                <span>IoT</span>
+                <span>Data Plane Architecture</span>
             </div>
-
-        <hr>
+        </section>
 
         <section class="profile-section">
             <h3>Education</h3>
+            <div class="profile-timeline">
             {% for item in site.data.people.taejune.education %}
-            <div class="profile-item row">
-                <div class="col-sm-9">
-                    <strong>{{ item.degree }}</strong>
+            <article class="profile-item">
+                <div class="profile-item-main">
+                    <h4>{{ item.degree }}</h4>
                     <div><em>{{ item.where }}</em></div>
                     {% if item.dissertation %}
                     <div>Dissertation: {{ item.dissertation }}</div>
@@ -60,19 +79,19 @@ title: Taejune Park
                     <div>Advisor: {{ item.advisor }}</div>
                     {% endif %}
                 </div>
-                <div class="col-sm-3 profile-item-date">
-                    <span>{{ item.year }}</span>
-                </div>
-            </div>
+                <time class="profile-item-date">{{ item.year }}</time>
+            </article>
             {% endfor %}
+            </div>
         </section>
 
         <section class="profile-section">
             <h3>Experience</h3>
+            <div class="profile-timeline">
             {% for item in site.data.people.taejune.experience %}
-            <div class="profile-item row">
-                <div class="col-sm-9">
-                    <strong>{{ item.affiliation }}</strong>
+            <article class="profile-item">
+                <div class="profile-item-main">
+                    <h4>{{ item.affiliation }}</h4>
                     {% if item.group %}
                     <div><em>{{ item.group }}</em></div>
                     {% endif %}
@@ -83,13 +102,10 @@ title: Taejune Park
                     <div>Supervisor: {{ item.supervisor }}</div>
                     {% endif %}
                 </div>
-                <div class="col-sm-3 profile-item-date">
-                    <span>{{ item.date }}</span>
-                </div>
-            </div>
+                <time class="profile-item-date">{{ item.date }}</time>
+            </article>
             {% endfor %}
+            </div>
         </section>
-
     </div>
 </div>
-

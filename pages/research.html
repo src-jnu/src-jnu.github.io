@@ -12,34 +12,33 @@ title: SRC Lab.
         <p></p><p></p>
 
         <h3 style="font-weight:bolder"> Representative study  </h3>
-        {% for group in site.data.research.study %}
-        <div class="row">
-            <div class="col-sm-10" style="line-height: 1.0;">
-                <h4 class="pub-title"><b>{{ group.group }}</b></h4>
-                <ul>
+        <div class="research-card-grid">
+            {% for group in site.data.research.study %}
+            <div class="research-topic-card">
+                <h4><b>{{ group.group }}</b></h4>
+                <ul class="research-topic-list">
                     {% for pub in group.studies %}
-                    <li>{{ pub.topic }}; <i>{{ pub.nickname }}</i></li>
+                    <li>
+                        <span>{{ pub.topic }}</span>
+                        <i>{{ pub.nickname }}</i>
+                    </li>
                     {% endfor %}
                 </ul>
-            </div> 
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
 
         <p></p><hr><p></p>
 
         <h3 style="font-weight:bolder"> Research project  </h3>
+        <div class="research-project-cards">
             {% for pub in site.data.research.project %}
-            <div class="row">
-                <div class="col-sm-10" style="line-height: 1.0;">
-                    <p>
-                        <ul><li> 
-                            <h4 class="pub-title">  <b> {{ pub.title }} </b></h4>
-                            <p class="pub-author"> <i>{{ pub.order }}</i>, {{ pub.date }} </p>
-                        </li></ul>
-                    </p>
-                </div> 
+            <div class="research-project-card">
+                <h4><b>{{ pub.title }}</b></h4>
+                <p><i>{{ pub.order }}</i>, {{ pub.date }}</p>
             </div>
             {% endfor %}
+        </div>
         <p></p><hr><p></p>
         
         <h3 style="font-weight:bolder"> The SRC Lab. conducts joint researches with various institutions  </h3><br><br>

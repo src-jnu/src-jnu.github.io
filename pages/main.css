@@ -284,6 +284,10 @@ footer .social-media-list li {
     font-weight: 700;
 }
 
+.home-title {
+    white-space: nowrap;
+}
+
 .home-section-header a {
     font-weight: 700;
 }

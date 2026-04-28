@@ -82,11 +82,16 @@
         .site-footer .footer-links li {
             display: inline-block;
             margin-right: 0.75rem;
-            font-size: 0.95rem;
+            font-size: 1.05rem;
         }
 
         .site-footer .footer-links li:last-child {
             margin-right: 0;
+        }
+
+        .site-footer .footer-links li a {
+            font-size: 1.05rem;
+            font-weight: 500;
         }
 
         .site-footer .footer-note {
@@ -94,6 +99,11 @@
             margin-top: 18px;
             font-size: 0.95rem;
         }
+    </style>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.github.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.github.project_title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.github.url }}">
+</head>
 
         .site-footer .footer-links {
             list-style: none;

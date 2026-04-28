@@ -83,7 +83,7 @@ footer .social-media-list li {
 
 .home-hero {
     margin: 22px 0 34px;
-    padding: 34px 30px;
+    padding: 34px 42px;
     border-radius: 14px;
     background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 64%);
     box-shadow: 0 8px 28px rgba(4, 18, 142, 0.08);
@@ -138,6 +138,8 @@ footer .social-media-list li {
 
 .home-slider {
     position: relative;
+    width: 92%;
+    margin-left: auto;
     overflow: hidden;
     border-radius: 14px;
     background: #f6f7fb;
@@ -172,7 +174,7 @@ footer .social-media-list li {
 
 .home-slide,
 .home-slide img {
-    height: 360px;
+    height: 300px;
 }
 
 .home-slide img {
@@ -314,6 +316,41 @@ footer .social-media-list li {
 .home-news-body p {
     margin-bottom: 0;
     line-height: 1.55;
+}
+
+.news-list {
+    margin-top: 24px;
+    border: 1px solid #e4e7f2;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(4, 18, 142, 0.05);
+}
+
+.news-item {
+    display: flex;
+    gap: 22px;
+    padding: 19px 22px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.news-item:last-child {
+    border-bottom: 0;
+}
+
+.news-item:hover {
+    background: #fbfcff;
+}
+
+.news-date {
+    flex: 0 0 112px;
+    color: #04128E;
+    font-weight: 700;
+}
+
+.news-body p {
+    margin-bottom: 0;
+    line-height: 1.6;
 }
 
 .people-grid {
@@ -544,12 +581,13 @@ div.my-item {
     }
 
     .home-slider {
+        width: 100%;
         margin-top: 24px;
     }
 
     .home-slide,
     .home-slide img {
-        height: 260px;
+        height: 230px;
     }
 
     .home-news-item {
@@ -557,6 +595,15 @@ div.my-item {
     }
 
     .home-news-date {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .news-item {
+        display: block;
+    }
+
+    .news-date {
         display: block;
         margin-bottom: 8px;
     }

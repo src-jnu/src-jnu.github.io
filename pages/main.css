@@ -81,6 +81,241 @@ footer .social-media-list li {
     border-style: solid;
 }
 
+.home-hero {
+    margin: 22px 0 34px;
+    padding: 34px 30px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 64%);
+    box-shadow: 0 8px 28px rgba(4, 18, 142, 0.08);
+}
+
+.home-eyebrow {
+    margin-bottom: 8px;
+    color: #04128E;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-title {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #151515;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.home-lead {
+    color: #333;
+    font-size: 19px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.home-cta {
+    margin-top: 22px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.home-cta a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #04128E;
+    color: #fff;
+}
+
+.home-cta a:hover,
+.home-cta a:focus {
+    color: #fff;
+    text-decoration: none;
+    background: #0b1fb6;
+}
+
+.home-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #f6f7fb;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.home-slides {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home-slide {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+}
+
+.home-slide:not(:first-child) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home-slide.is-active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.home-slide,
+.home-slide img {
+    height: 360px;
+}
+
+.home-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-slide.logo-slide img {
+    padding: 52px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.slide-arrow:hover {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.slide-arrow:before {
+    position: absolute;
+    top: 11px;
+    width: 14px;
+    height: 14px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    content: "";
+}
+
+.slide-arrow-left {
+    left: 14px;
+}
+
+.slide-arrow-left:before {
+    left: 14px;
+    transform: rotate(-45deg);
+}
+
+.slide-arrow-right {
+    right: 14px;
+}
+
+.slide-arrow-right:before {
+    right: 14px;
+    transform: rotate(135deg);
+}
+
+.home-slide-dots {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 14px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.home-slide-dots li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.home-slide-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.65);
+    cursor: pointer;
+}
+
+.home-slide-dots button.is-active {
+    background: #04128E;
+}
+
+.home-news {
+    margin-bottom: 34px;
+}
+
+.home-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.home-section-header h2 {
+    margin: 0;
+    color: #04128E;
+    font-weight: 700;
+}
+
+.home-section-header a {
+    font-weight: 700;
+}
+
+.home-news-list {
+    border: 1px solid #e4e7f2;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(4, 18, 142, 0.05);
+}
+
+.home-news-item {
+    display: flex;
+    gap: 18px;
+    padding: 17px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.home-news-item:last-child {
+    border-bottom: 0;
+}
+
+.home-news-date {
+    flex: 0 0 105px;
+    color: #04128E;
+    font-weight: 700;
+}
+
+.home-news-body p {
+    margin-bottom: 0;
+    line-height: 1.55;
+}
+
 .people-grid {
     margin-top: 22px;
 }
@@ -296,6 +531,36 @@ div.my-item {
 }
 
 @media (max-width: 767px) {
+    .home-hero {
+        padding: 24px 18px;
+    }
+
+    .home-title {
+        font-size: 34px;
+    }
+
+    .home-lead {
+        font-size: 17px;
+    }
+
+    .home-slider {
+        margin-top: 24px;
+    }
+
+    .home-slide,
+    .home-slide img {
+        height: 260px;
+    }
+
+    .home-news-item {
+        display: block;
+    }
+
+    .home-news-date {
+        display: block;
+        margin-bottom: 8px;
+    }
+
     .pub-card {
         padding-right: 20px;
     }

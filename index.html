@@ -4,170 +4,136 @@ title: SRC Lab.
 ---
 <div class="index">
   <div class="container">
-    <br>
-    <div class="row" style="line-height: 1.6;">
-      <div class="col-sm-6" >
-        <h1 style="display:inline">
-          <b> Welcome to the SRC Lab. </b>
-        </h1> 
-        <p></p><p></p>
-        <p style="font-size:large; text-align:justify"> 
-          The Secure and Reliable Computing (SRC) Lab at Chonnam National University specializes in information security. Our current research focuses on key challenges such as cloud and network security, high-performance security systems, security for and with AI (including adversarial AI), and traffic and system analysis. We are passionate about developing innovative security architectures and systems! 😊
-        </p>
-        <h4><p> 
-          <b><a href="/page/joinus.html"> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Are you interested in joining our laboratory? Join us! >> </a></b>
-        </p></h4>
-      </div>
-      <div class="col-sm-2">
-      </div>
-      <div class="col-sm-6">         
-              <div class="slidebox">
-                    <input type="radio" name="slide" id="slide01" checked>
-                    <input type="radio" name="slide" id="slide02">
-                    <input type="radio" name="slide" id="slide03">
-                    <input type="radio" name="slide" id="slide04">
+    <section class="home-hero">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="home-eyebrow">Secure and Reliable Computing Lab.</p>
+          <h1 class="home-title">Welcome to the SRC Lab.</h1>
+          <p class="home-lead">
+            The SRC Lab. at Chonnam National University studies secure and reliable AI, network,
+            and computing systems for trustworthy cloud and edge environments. We design practical
+            security architectures, high-performance network systems, and AI-enabled security
+            technologies that bridge research ideas and deployable systems.
+          </p>
+          <p class="home-cta">
+            <a href="/pages/joinus.html">
+              <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+              Are you interested in joining our laboratory? Join us!
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <div class="home-slider">
+            <ul class="home-slides">
+              <li class="home-slide is-active">
+                <img src="/image/src/group-kics2026w.jpg" alt="SRC Lab group photo at KICS 2026 winter">
+              </li>
+              <li class="home-slide">
+                <img src="/image/src/group-aifesta25.jpg" alt="SRC Lab at AI Festa 2025">
+              </li>
+              <li class="home-slide">
+                <img src="/image/src/group-oct25.jpg" alt="SRC Lab group photo">
+              </li>
+              <li class="home-slide logo-slide">
+                <img src="/image/src/logo_blue.png" alt="SRC Lab logo">
+              </li>
+            </ul>
 
-                    <!-- <input type="radio" name="slide" id="slide04"> -->
-                    <ul class="slidelist">
-                      <li class="slideitem"> <!-- 1 -->
-                        <a>
-                          <label for="slide04" class="left"></label>  
-                          <label for="slide02" class="right"></label>
-                          <img src="/image/src/logo_blue.png">
-                        </a>
-                      </li>
-                      <li class="slideitem"> <!-- 2 -->
-                        <a>
-                          <label for="slide01" class="left"></label>
-                          <label for="slide03" class="right"></label>
-                          <img src="/image/src/group-kics2026w.jpg"> 
-                        </a>
-                      </li>
-                      <li class="slideitem"> <!-- 3 -->
-                        <a>
-                          <label for="slide02" class="left"></label>
-                          <label for="slide04" class="right"></label>
-                          <img src="/image/src/group-aifesta25.jpg"> 
-                        </a>
-                      </li>
-                      <li class="slideitem"> <!-- 4 -->
-                        <a>
-                          <label for="slide03" class="left"></label>
-                          <label for="slide01" class="right"></label>
-                          <img src="/image/src/group-oct25.jpg"> 
-                        </a>
-                      </li>
-                    </ul>
-              </div>
+            <button type="button" class="slide-arrow slide-arrow-left" aria-label="Previous slide"></button>
+            <button type="button" class="slide-arrow slide-arrow-right" aria-label="Next slide"></button>
 
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="jumbotron"; style="background-color:whitesmoke; font-size:large">
-          <h2 class="news"> <a href="/pages/news.html"> <b> News >> </b> </a> </h2>
-          {% for news in site.data.news limit: 5 %}
-          <div class="pub row" style="padding-top:20px; line-height: 1.6;" >
-            <div class="col-sm-2" style="margin-right:-50px;margin-left:00px;">
-              <span class="post-meta"> {{ news.date }} </span>
-            </div>
-            <div class="col-sm-10" style="line-height: 1.6;">
-               {{ news.title }} 
-
-               {% if news.link %}
-               <a href="{{ news.link }}" target="_self">[Link]</a>
-               {% endif %}
-
-               {% if news.nlink %}
-               <a href="{{ news.nlink }}" target="_blank">[Link]</a>
-               {% endif %}
-            </div>
+            <ol class="home-slide-dots">
+              <li><button type="button" class="is-active" aria-label="Show slide 1"></button></li>
+              <li><button type="button" aria-label="Show slide 2"></button></li>
+              <li><button type="button" aria-label="Show slide 3"></button></li>
+              <li><button type="button" aria-label="Show slide 4"></button></li>
+            </ol>
           </div>
-          {% endfor %}
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="home-news">
+      <div class="home-section-header">
+        <h2>News</h2>
+        <a href="/pages/news.html">View all news</a>
+      </div>
+
+      <div class="home-news-list">
+        {% for news in site.data.news limit: 5 %}
+        <article class="home-news-item">
+          <time class="home-news-date">{{ news.date }}</time>
+          <div class="home-news-body">
+            <p>
+              {{ news.title }}
+              {% if news.link %}
+              <a href="{{ news.link }}" target="_self">[Link]</a>
+              {% endif %}
+
+              {% if news.nlink %}
+              <a href="{{ news.nlink }}" target="_blank" rel="noopener">[Link]</a>
+              {% endif %}
+            </p>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
   </div>
 </div>
 
-<style>
-    /* 리셋 CSS */
-    * {margin:0;padding:0;box-sizing:border-box;}
-    ul, li {list-style:none;}
+<script>
+  (function () {
+    var slider = document.querySelector('.home-slider');
+    if (!slider) return;
 
-    /* 슬라이드 Style */
-    .slidebox {max-width:1000px;margin:0 auto;}
-    .slidebox .slidelist {white-space:nowrap;font-size:0;overflow:hidden;}
-    .slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;width:100%;transition:all 1s;}
-    .slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
-    .slidebox .slidelist .slideitem > a img {margin:auto; max-width: 90%; max-height: 300px; display:block }
-    .slidebox .slidelist .slideitem > a label {position:absolute;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
-    .slidebox .slidelist .slideitem > a label.left {left:20px;background:#777 url('/image/slideimg/left-arrow.png') center center / 50% no-repeat; opacity:0.3;}
-    .slidebox .slidelist .slideitem > a label.right {right:20px;background:#777 url('/image/slideimg/right-arrow.png') center center / 50% no-repeat; opacity:0.3}
+    var slides = slider.querySelectorAll('.home-slide');
+    var dots = slider.querySelectorAll('.home-slide-dots button');
+    var prev = slider.querySelector('.slide-arrow-left');
+    var next = slider.querySelector('.slide-arrow-right');
+    var current = 0;
+    var timer;
 
-    [name="slide"] {display:none;}
-    #slide01:checked ~ .slidelist .slideitem {transform:translateX(0);    animation:slide01 30s ease-in-out infinite;}
-    #slide02:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 30s ease-in-out infinite;}
-    #slide03:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 30s ease-in-out infinite;}
-    #slide04:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 30s ease-in-out infinite;}
+    function showSlide(index) {
+      current = (index + slides.length) % slides.length;
 
-    @keyframes slide01 {
-      0% {left:0%;}
-      24% {left:0%;}
-      25% {left:-100%}
-      49% {left:-100%;}
-      50% {left:-200%;}
-      74% {left:-200%;}
-      75% {left:-300%;}
-      99% {left:-300%;}
-      100% {left:0%;}
+      slides.forEach(function (slide, slideIndex) {
+        slide.classList.toggle('is-active', slideIndex === current);
+      });
+
+      dots.forEach(function (dot, dotIndex) {
+        dot.classList.toggle('is-active', dotIndex === current);
+      });
     }
 
-    @keyframes slide02 {
-      0% {left:0%;}
-      24% {left:0%;}
-      25% {left:-100%}
-      49% {left:-100%;}
-      50% {left:100%;}
-      74% {left:100%;}
-      75% {left:200%;}
-      99% {left:200%;}
-      100% {left:0%;}
+    function startAutoPlay() {
+      timer = window.setInterval(function () {
+        showSlide(current + 1);
+      }, 5000);
     }
 
-  
-    @keyframes slide03 {
-      0% {left:0%;}
-      24% {left:0%;}
-      25% {left:-200%}
-      49% {left:-200%;}
-      50% {left:-100%;}
-      74% {left:-100%;}
-      75% {left:100%;}
-      99% {left:100%;}
-      100% {left:0%;}
+    function resetAutoPlay() {
+      window.clearInterval(timer);
+      startAutoPlay();
     }
 
-    @keyframes slide04 {
-      0% {left:0%;}
-      24% {left:0%;}
-      25% {left:300%}
-      49% {left:300%;}
-      50% {left:200%;}
-      74% {left:200%;}
-      75% {left:100%;}
-      99% {left:100%;}
-      100% {left:0%;}
-    }
+    prev.addEventListener('click', function () {
+      showSlide(current - 1);
+      resetAutoPlay();
+    });
 
-  
-        /* 페이징 스타일 */
-    .paginglist {text-align:center;padding:0px 0;}
-    .paginglist > li {display:inline-block;vertical-align:middle;margin:0 00px;}
-    .paginglist > li > label {display:block;padding:4px 30px;border-radius:10px;background:#ccc;cursor:pointer;margin:0px 5px;}
-    .paginglist > li:hover > label {background:#777;}
-    #slide01:checked ~ .paginglist > li:nth-child(1) > label {background:#777;}
-    #slide02:checked ~ .paginglist > li:nth-child(2) > label {background:#777;}
-    #slide03:checked ~ .paginglist > li:nth-child(3) > label {background:#777;}
-    #slide04:checked ~ .paginglist > li:nth-child(4) > label {background:#777;}
-</style>
+    next.addEventListener('click', function () {
+      showSlide(current + 1);
+      resetAutoPlay();
+    });
+
+    dots.forEach(function (dot, index) {
+      dot.addEventListener('click', function () {
+        showSlide(index);
+        resetAutoPlay();
+      });
+    });
+
+    startAutoPlay();
+  }());
+</script>

@@ -183,7 +183,7 @@ div.my-item {
 .photo-thumb {
     display: block;
     width: 100%;
-    height: 260px;
+    height: 320px;
     object-fit: cover;
 }
 
@@ -198,6 +198,6 @@ div.my-item {
     }
 
     .photo-thumb {
-        height: 220px;
+        height: 260px;
     }
 }

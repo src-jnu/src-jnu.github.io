@@ -4,27 +4,31 @@ title: SRC Lab.
 ---
 <div class="people">
     <div class="container">
-        <h1 class="Lecture"> People </h1> <br>
-        <div class="row justify-content-center align-items-stretch">
+        <h1 class="Lecture"> People </h1>
+        <div class="row people-grid">
             {% for person in site.data.people.member %}
-            <div class="person col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
-                <img src="{{ person.photo }}" alt="photo" class="person-photo img-circle" height="300px" width="auto">
-                
-                {% if person.link %}
-                <h3 class="person-name"> <a href="{{ person.link }}"> <b> {{ person.name }} </b> </a> </h3> 
-                {% else %}
-                <h3 class="person-name"> <b>{{ person.name }}</b> </h3>
-                {% endif %}
-                
-                <b> {{ person.role }} </b> <br>
-                {{ person.email }}
-                <br>
-                <br>
-                <br>
-                <br>
+            <div class="person col-xs-12 col-sm-6 col-md-4">
+                <div class="person-card">
+                    <img src="{{ person.photo }}" alt="{{ person.name }}" class="person-photo" loading="lazy">
+
+                    <div class="person-info">
+                        {% if person.link %}
+                        <h3 class="person-name"><a href="{{ person.link }}"><b>{{ person.name }}</b></a></h3>
+                        {% else %}
+                        <h3 class="person-name"><b>{{ person.name }}</b></h3>
+                        {% endif %}
+
+                        {% if person.role %}
+                        <p class="person-role"><b>{{ person.role }}</b></p>
+                        {% endif %}
+
+                        {% if person.email %}
+                        <p class="person-email">{{ person.email }}</p>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
             {% endfor %} 
-            <div class="w-100"></div>
         </div>
 
         <!-- <br>

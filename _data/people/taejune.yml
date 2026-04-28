@@ -1,0 +1,52 @@
+name: Taejune Park
+role: Associate Professor / Ph.D.
+affiliations:
+  - School of Artificial Intelligence, College of AI Convergence
+  - Department of Software Engineering, College of Engineering
+  - Chonnam National University
+contact:
+  office: Engineering Building #7, Room 422
+  phone: +82-62-530-4232
+  email: taejune.park@jnu.ac.kr
+  scholar: https://scholar.google.com/citations?user=yjrmSkAAAAAJ
+
+education:
+  - degree: Ph.D. in Computer Science
+    where: Korea Advanced Institute of Science and Technology (KAIST)
+    dissertation: >
+      Design and implementation of the data plane for provisioning high-performance security services in a dynamic network environment
+    advisor: Seungwon Shin
+    year: Feb. 2021
+
+  - degree: M.S in Engineering in the Graduate School of Information Security
+    where: Korea Advanced Institute of Science and Technology (KAIST)
+    thesis: >
+      QoSE: Quality of Security (A network security framework with distributed NFV)
+    advisor: Seungwon Shin
+    year: Aug. 2015
+
+  - degree: B.S in Computer Engineering
+    where: Korea Maritime and Ocean University (KMOU)
+    year: Aug. 2013
+
+experience:
+  - affiliation: Chonnam National University
+    group: College of AI Convergence, School of Artificial Intelligence
+    position: Associate Professor
+    date: Sep. 2021 - current
+
+  - affiliation: Korea Advanced Institute of Science and Technology (KAIST)
+    group: Information & Electronics Research Institute
+    position: Post-doctoral Researcher
+    supervisor: Seungwon Shin
+    date: Mar. 2021 - Aug. 2021
+
+  - affiliation: SRI International
+    group: Internet Security Group, Computing Science Laboratory
+    position: Research Observer
+    supervisor: Phillip Porras
+    date: Dec. 2016 - Mar. 2017
+
+  - affiliation: Samsung Software Membership (An internship program at Samsung Electronics Co., LTD.)
+    position: Software developer, Network project manager, and Part-time lecturer
+    date: Feb. 2012 - Aug. 2015

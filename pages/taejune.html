@@ -1,96 +1,95 @@
 ---
 layout: default
-title: SRC Lab.
+title: Taejune Park
 ---
 
-<div class="faculty">
-    <div class="container"  style="line-height: 1.6;">
-        <h1 class="Faculty"> Faculty </h1>
-        
-        <div class="row">
-            <div class="col-sm-3">
-                <IMG SRC="../image/people/001_taejunepark.jpg" ALT="Taejune Park" ALIGN="CENTER" hspace="20" vspace="20" HEIGHT="300">
+<div class="faculty profile-page">
+    <div class="container">
+        <div class="profile-card">
+            <div class="row profile-header">
+                <div class="col-sm-3 profile-avatar">
+                    <img src="../image/people/001_taejunepark.jpg" alt="Taejune Park" class="img-responsive">
+                </div>
+                <div class="col-sm-9 profile-summary">
+                    <h1>{{ site.data.people.taejune.name }} (박태준)</h1>
+                    <h3>{{ site.data.people.taejune.role }}</h3>
+                    <p class="lead profile-affiliations">
+                        {% for affiliation in site.data.people.taejune.affiliations %}
+                        {{ affiliation }}{% unless forloop.last %}<br>{% endunless %}
+                        {% endfor %}
+                    </p>
+                    <dl class="profile-meta">
+                        <dt>Office</dt>
+                        <dd>{{ site.data.people.taejune.contact.office }}</dd>
+                        <dt>Phone</dt>
+                        <dd>{{ site.data.people.taejune.contact.phone }}</dd>
+                        <dt>E-mail</dt>
+                        <dd><a href="mailto:{{ site.data.people.taejune.contact.email }}">{{ site.data.people.taejune.contact.email }}</a></dd>
+                        <dt>Google Scholar</dt>
+                        <dd><a href="{{ site.data.people.taejune.contact.scholar }}">{{ site.data.people.taejune.contact.scholar }}</a></dd>
+                    </dl>
+                </div>
             </div>
-            <div class="col-sm-8">
-                <p>
-                    <h1> <b> Taejune Park (박태준) </b> </h1>
-                    <h3> <b> Associate Professor / Ph.D. </b> </h3>
-                    <h4> <em> School of Artificial Intelligence, College of AI Convergence</em></h4>
-                    <h4> <em> Department of Software Engineering, College of Engineering</em></h4>
-                    <h4> Chonnam National University </h4> 
-                </p>  <br>
 
+            <div class="profile-bio">
                 <p>
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Office: Engineering Building #7, Room 422 <br>
-                    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Phone: +82-62-530-4232  <br>
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> E-mail: taejune.park&ensp;[at]&ensp;jnu.ac.kr <br>
-                    <a href="https://scholar.google.com/citations?user=yjrmSkAAAAAJ"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>&ensp;Google scholar</a></li> 
+                    Taejune Park is an Associate Professor in the School of Artificial Intelligence at Chonnam National University.
+                    He received his Ph.D. in Computer Science from Korea Advanced Institute of Science and Technology (KAIST) under the supervision of
+                    <a href="https://nss.kaist.ac.kr/?page_id=29">Prof. Seungwon Shin</a>.
+                    He also earned an M.S. from KAIST and a B.S. from Korea Maritime and Ocean University (KMOU).
+                    Before joining JNU in 2021, he worked as a post-doctoral researcher at KAIST and participated in the Samsung Software Membership internship program at Samsung Electronics.
+                    His research interests include security in SDN/NFV environments, IoT, and data plane architecture.
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <p> 
-                Taejune Park is an Assistant Professor at the College of AI Convergence, School of Artificial Intelligence at Chonnam National University (JNU). He received the Ph.D. degree from Korea Advanced Institute of Science and Technology (KAIST), advised by <a href="https://nss.kaist.ac.kr/?page_id=29"> Prof. Seungwon Shin</a>, the M.S degree from KAIST, and the B.S. from Korea Maritime and Ocean University (KMOU), all in Computer Science/Engineering. Prior to joining JNU in 2021, he has been a post-doctoral researcher fellow at KAIST, software developer at an internship program at Samsung Electronics Co., LTD., called Samsung Software Membership. His research interests include security issues on an SDN/NFV environment and IoT (Internet of Things), and a data plane architecture.
-            </p>
-        <div>
-    
+
         <hr>
 
-        <h3> Education </h3>
-        {% for pub in site.data.faculty.education %}
-        <div class="row" style="padding-top:0px">
-            <div class="col-sm-9">
-                <p>
-                    <ul> 
-                        <li> <b> {{ pub.degree }} </b> </li>
-                        <ul>
-                            <li> <i> {{ pub. where }} </i> </li>
-                            
-                            {% if pub.dissertation %}
-                            <li> Dissertation: {{ pub.dissertation }} </li>
-                            {% elsif pub.thesis%}
-                            <li> Thesis: {{ pub.thesis }} </li>
-                            {% endif %}
-
-                            {% if pub.advisor %}
-                            <li> Advisor: {{ pub.advisor }} </li>
-                            {% endif %}
-                        </ul>
-                    </ul>
-                </p>
-            </div> 
-            <div class="col-sm-3">
-                <p> {{pub.year}} </p>
+        <section class="profile-section">
+            <h3>Education</h3>
+            {% for item in site.data.people.taejune.education %}
+            <div class="profile-item row">
+                <div class="col-sm-9">
+                    <strong>{{ item.degree }}</strong>
+                    <div><em>{{ item.where }}</em></div>
+                    {% if item.dissertation %}
+                    <div>Dissertation: {{ item.dissertation }}</div>
+                    {% elsif item.thesis %}
+                    <div>Thesis: {{ item.thesis }}</div>
+                    {% endif %}
+                    {% if item.advisor %}
+                    <div>Advisor: {{ item.advisor }}</div>
+                    {% endif %}
+                </div>
+                <div class="col-sm-3 profile-item-date">
+                    <span>{{ item.year }}</span>
+                </div>
             </div>
-        </div>
-        {% endfor %}
+            {% endfor %}
+        </section>
 
-        <h3> Experience </h3>
-        {% for pub in site.data.faculty.experience %}
-        <div class="row" style="padding-top:0px">
-            <div class="col-sm-9">
-                <p>
-                    <ul> 
-                        <li> <b> {{ pub.affiliation }} </b> </li>
-                        <ul>
-                            {% if pub.group %}
-                            <li> <i> {{ pub.group }} </i> </li>
-                            {% endif %}
-
-                            {% if pub.position %}
-                            <li> {{ pub.position }} </li>
-                            {% endif %}
-                        </ul>
-                    </ul>
-                </p>
-            </div> 
-            <div class="col-sm-3">
-                <p> {{pub.date}} </p>
+        <section class="profile-section">
+            <h3>Experience</h3>
+            {% for item in site.data.people.taejune.experience %}
+            <div class="profile-item row">
+                <div class="col-sm-9">
+                    <strong>{{ item.affiliation }}</strong>
+                    {% if item.group %}
+                    <div><em>{{ item.group }}</em></div>
+                    {% endif %}
+                    {% if item.position %}
+                    <div>{{ item.position }}</div>
+                    {% endif %}
+                    {% if item.supervisor %}
+                    <div>Supervisor: {{ item.supervisor }}</div>
+                    {% endif %}
+                </div>
+                <div class="col-sm-3 profile-item-date">
+                    <span>{{ item.date }}</span>
+                </div>
             </div>
-        </div>
-        {% endfor %}
+            {% endfor %}
+        </section>
 
-        <br>
     </div>
 </div>
 

@@ -110,3 +110,27 @@ p.pub-abstract {
 div.my-item {
 	min-height:500px;
 }
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.photo-item {
+    flex: 0 1 240px;
+    max-width: 240px;
+}
+
+.photo-thumb {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+}
+
+.photo-item a {
+    text-decoration: none;
+}

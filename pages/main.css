@@ -87,7 +87,6 @@ footer .social-media-list li {
     border-radius: 14px;
     background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 64%);
     box-shadow: 0 8px 28px rgba(4, 18, 142, 0.08);
-    min-height: 72vh;
     display: flex;
     align-items: center;
 }
@@ -106,12 +105,11 @@ footer .social-media-list li {
     border-radius: 14px;
     background: #f6f7fb;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
-    min-height: 360px;
 }
 
 .home-slide,
 .home-slide img {
-    height: 360px;
+    height: 300px;
 }
 
 @media (max-width: 767px) {
@@ -171,6 +169,7 @@ footer .social-media-list li {
     display: inline-block;
     padding: 10px 14px;
     border-radius: 999px;
+    white-space: nowrap;
     background: #04128E;
     color: #fff;
 }
@@ -189,7 +188,6 @@ footer .social-media-list li {
     overflow: hidden;
     border-radius: 14px;
     background: #f6f7fb;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
 .home-slides {

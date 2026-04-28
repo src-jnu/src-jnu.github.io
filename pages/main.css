@@ -307,6 +307,10 @@ footer .social-media-list li {
     border-bottom: 0;
 }
 
+.home-news-item:hover {
+    background: #fbfcff;
+}
+
 .home-news-date {
     flex: 0 0 105px;
     color: #04128E;

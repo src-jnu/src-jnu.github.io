@@ -1,21 +1,29 @@
 ---
-- topic: Nerual cryptographic (Cryptographic research using neural networks)
-  nickname : Hashcraft, ZERATUL
+- group: AI and Neural Network Security
+  studies:
+    - topic: Neural cryptography (cryptographic primitives over neural networks)
+      nickname: Hashcraft, ZERATUL, Artanis
 
-- topic: Fault-Tolerant MEC Architecture
-  nickname : Fatriot
+    - topic: Privacy and security for AI
+      nickname: MARIO, Deep Prompt Inspection
 
-- topic: Enabling Stable Ultra Reliable Low Latency Communication in Multi-access Edge Computing
-  nickname : MECaNIC
+- group: Network Security and Traffic Analysis
+  studies:
+    - topic: High-performance regular expression processing for Deep Packet Inspection
+      nickname: Reinhardt, RAGNAROS
 
-- topic: High-performance and real-time programmable regular expression processor for Deep Packet Inspection
-  nickname : Reinhardt
+    - topic: Traffic obfuscation for privacy and security
+      nickname: MUFFLER, PINOCCHIO
 
-- topic: Mixed-Criticality Scheduling on Switched-Ethernet Using Software-Defined Networking
-  nickname : MC-SDN
-  
-- topic: SDN Security service instantiation on a data plane
-  nickname : DPX
+- group: Reliable Edge and Real-Time Systems
+  studies:
+    - topic: Enabling reliable communication in Multi-access Edge Computing
+      nickname: MECaNIC, Fatriot
 
-- topic: Comprehensive study on SDN security
-  nickname :  
+    - topic: Mixed-criticality scheduling systems
+      nickname: MC-SDN, MC-HDP
+
+- group: Data Plane Security
+  studies:
+    - topic: Security service instantiation on a data plane
+      nickname: DPX, SmartNIC security bench

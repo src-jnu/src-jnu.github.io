@@ -1,4 +1,11 @@
 ---
+
+- title: Large-scale regex processing acceleration with neural networks for DPI
+  author: Sebin Jo and Taejune Park
+  where: 46th IEEE International Conference on Distributed Computing Systems
+  abbr: ICDCS'26
+  date: Jun. 2026.
+
 - title: HybridMesh&#58; A Hardware-software Hybrid Approach for Accelerating Service Mesh Ingress
   author: Myoungsung You, Jaehyun Nam, Minjae Seo, Taejune Park, and Seungwon Shin
   where: The 23rd USENIX Symposium on Network Systems Design and Implementation
@@ -16,7 +23,6 @@
   where: ACM SIGCOMM 2025
   abbr: SIGCOMM
   date: Sep. 2025
-
 
 - title: MUFFLER&#58; Secure Tor Traffic Obfuscation with Dynamic Connection Shuffling and Distributing
   author: Minjae Seo, Myoungsung You, Jaehan Kim, Taejune Park, Seungwon Shin†, and Jinwoo Kim

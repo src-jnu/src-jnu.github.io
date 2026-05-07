@@ -10,6 +10,20 @@ contact:
   email: taejune.park@jnu.ac.kr
   scholar: https://scholar.google.com/citations?user=yjrmSkAAAAAJ
 
+bio: >
+  Taejune Park is an Associate Professor in the School of Artificial Intelligence at Chonnam National University.
+  He received his Ph.D. in Computer Science from Korea Advanced Institute of Science and Technology (KAIST) under the supervision of
+  <a href="https://nss.kaist.ac.kr/?page_id=29">Prof. Seungwon Shin</a>.
+  He also earned an M.S. from KAIST and a B.S. from Korea Maritime and Ocean University (KMOU).
+  Before joining JNU in 2021, he worked as a post-doctoral researcher at KAIST and participated in the Samsung Software Membership internship program at Samsung Electronics.
+  His research interests include security in SDN/NFV environments, IoT, and data plane architecture.
+
+interests:
+  - Security
+  - Cloud system
+  - Network
+  - Artificial Intelligence
+
 education:
   - degree: Ph.D. in Computer Science
     where: Korea Advanced Institute of Science and Technology (KAIST)

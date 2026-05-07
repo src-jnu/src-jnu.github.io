@@ -40,6 +40,7 @@ title: SRC Lab.
                   <div class="photo-lightbox-caption">
                         <h3 class="photo-lightbox-title"></h3>
                         <p class="photo-lightbox-date"></p>
+                        <a class="photo-lightbox-original" href="" target="_blank" rel="noopener">Open original</a>
                   </div>
             </div>
       </div>
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var image = lightbox.querySelector('.photo-lightbox-image');
       var title = lightbox.querySelector('.photo-lightbox-title');
       var date = lightbox.querySelector('.photo-lightbox-date');
+      var originalLink = lightbox.querySelector('.photo-lightbox-original');
       var closeButton = lightbox.querySelector('.photo-lightbox-close');
       var lastActiveElement = null;
 
@@ -60,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             lastActiveElement = trigger;
             image.src = trigger.href;
             image.alt = trigger.querySelector('img').alt;
+            originalLink.href = trigger.href;
             title.textContent = trigger.dataset.title || '';
             date.textContent = trigger.dataset.date || '';
             lightbox.classList.add('is-open');
@@ -73,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             lightbox.setAttribute('aria-hidden', 'true');
             document.body.classList.remove('photo-lightbox-open');
             image.src = '';
+            originalLink.href = '';
             if (lastActiveElement) {
                   lastActiveElement.focus();
             }

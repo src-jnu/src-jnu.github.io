@@ -466,9 +466,10 @@ h3 {
 }
 
 .home-news-date {
-    flex: 0 0 105px;
+    flex: 0 0 118px;
     color: #04128E;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .home-news-body p {

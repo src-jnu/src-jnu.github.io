@@ -31,12 +31,27 @@ h3 {
     display: flex;
     align-items: center;
     width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.home-hero .row > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.home-hero .row > [class*="col-"]:first-child {
+    padding-right: 28px;
+}
+
+.home-hero .row > [class*="col-"]:last-child {
+    padding-left: 28px;
 }
 
 .home-slider {
     position: relative;
-    width: 92%;
-    margin-left: auto;
+    width: 100%;
+    margin-left: 0;
     overflow: hidden;
     border-radius: 14px;
     background: #f6f7fb;
@@ -59,6 +74,7 @@ h3 {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.15;
+    white-space: nowrap;
 }
 
 .home-lead {
@@ -873,15 +889,22 @@ p.pub-abstract {
         display: block;
     }
 
+    .home-hero .row > [class*="col-"],
+    .home-hero .row > [class*="col-"]:first-child,
+    .home-hero .row > [class*="col-"]:last-child {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     .home-title {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 1.2;
     }
 
     .home-lead {
         font-size: 17px;
         line-height: 1.6;
-        text-align: left;
+        text-align: justify;
     }
 
     .home-cta {
@@ -1050,5 +1073,17 @@ p.pub-abstract {
         height: 38px;
         font-size: 30px;
         line-height: 34px;
+    }
+}
+
+@media (max-width: 360px) {
+    .home-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 340px) {
+    .home-title {
+        font-size: 20px;
     }
 }

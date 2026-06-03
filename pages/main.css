@@ -59,7 +59,6 @@ h3 {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.15;
-    white-space: nowrap;
 }
 
 .home-lead {
@@ -78,11 +77,12 @@ h3 {
 
 .home-cta a {
     display: inline-block;
+    max-width: 100%;
     padding: 10px 14px;
     border-radius: 999px;
-    white-space: nowrap;
     background: #04128E;
     color: #fff;
+    line-height: 1.35;
 }
 
 .home-cta a:hover,
@@ -863,25 +863,66 @@ p.pub-abstract {
 
 @media (max-width: 767px) {
     .home-hero {
+        display: block;
+        margin: 16px 0 28px;
         padding: 24px 18px;
+        border-radius: 10px;
+    }
+
+    .home-hero .row {
+        display: block;
     }
 
     .home-title {
-        font-size: 34px;
+        font-size: 30px;
+        line-height: 1.2;
     }
 
     .home-lead {
         font-size: 17px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .home-cta {
+        font-size: 16px;
+    }
+
+    .home-cta a {
+        border-radius: 10px;
     }
 
     .home-slider {
         width: 100%;
-        margin-top: 24px;
+        margin-top: 22px;
+        margin-left: 0;
+    }
+
+    .home-slides {
+        height: clamp(230px, 68vw, 310px);
+    }
+
+    .home-slide {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 
     .home-slide,
     .home-slide img {
-        height: 230px;
+        height: 100%;
+    }
+
+    .home-slide img {
+        object-fit: contain;
+        object-position: center center;
+        background: #f6f7fb;
+    }
+
+    .home-slide.logo-slide img {
+        padding: 28px;
     }
 
     .home-news-item {

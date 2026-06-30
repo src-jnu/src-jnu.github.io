@@ -1,4 +1,28 @@
 ---
+- title: 군 환경을 위한 신경망 기반 암호 알고리즘 생성 시스템 및 적용 가능성
+  author: Sungsoo Moon, Juyeon Jeong and Taejune Park
+  where: Korea Institute of Military Science and Technology (KIMST) Conference 2026
+  abbr: KIMST 2026
+  date: Jun. 2026
+
+- title: 1-day 취약점 분석 워크플로우 개선을 위한 패치 기반 바이너리 분석 도구
+  author: Myungjine Shin, Sebin Jo and Taejune Park
+  where: Korean Institute of Communication Sciences Conference 2026, Pyeongchang, Korea, Feb 2026
+  abbr: KICS Conf.
+  date: Feb. 2026
+
+- title: SmartNIC 기반 네트워크 보안 가속 기술에 관한 연구
+  author: Seungyong Cho, Gyeongjun Kim and Taejune Park
+  where: Korean Institute of Communication Sciences Conference 2026, Pyeongchang, Korea, Feb 2026
+  abbr: KICS Conf.
+  date: Feb. 2026
+
+- title: USB 전파형 크립토마이너의 프로세스 감시 행위에 대한 API 후킹 기반 역탐지
+  author: Sieun Yang, Juyeon Jeong and Taejune Park
+  where: Korean Institute of Communication Sciences Conference 2026, Pyeongchang, Korea, Feb 2026
+  abbr: KICS Conf.
+  date: Feb. 2026
+
 - title: 암호 알고리즘 생성 시스템
   author: Juyeon Jeong, Sungsoo Moon and Taejune Park
   where: Cyber Security Conference at HONAM 2025

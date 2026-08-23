@@ -38,19 +38,23 @@ title: SRC Lab.
             <div class="row alumni-list">
             {% for person in site.data.people.alumni %}
                 <div class="col-xs-12 col-sm-6 col-md-4 alumni-entry">
-                    {% if person.link %}
-                    <h3 class="alumni-name"><a href="{{ person.link }}"><b>{{ person.name }}</b></a></h3>
-                    {% else %}
-                    <h3 class="alumni-name"><b>{{ person.name }}</b></h3>
-                    {% endif %}
+                    <div class="person-card alumni-card">
+                        <div class="person-info alumni-info">
+                            {% if person.link %}
+                            <h3 class="alumni-name"><a href="{{ person.link }}"><b>{{ person.name }}</b></a></h3>
+                            {% else %}
+                            <h3 class="alumni-name"><b>{{ person.name }}</b></h3>
+                            {% endif %}
 
-                    {% if person.role %}
-                    <p class="alumni-role">{{ person.role }}</p>
-                    {% endif %}
+                            {% if person.role %}
+                            <p class="alumni-role">{{ person.role }}</p>
+                            {% endif %}
 
-                    {% if person.job %}
-                    <p class="alumni-job">{{ person.job }}</p>
-                    {% endif %}
+                            {% if person.job %}
+                            <p class="alumni-job">{{ person.job }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
             {% endfor %}
             </div>

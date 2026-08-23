@@ -581,14 +581,14 @@ h3 {
 
 .alumni-card {
     display: flex;
-    min-height: 140px;
+    min-height: 120px;
     align-items: center;
 }
 
 .alumni-info {
     width: 100%;
     min-height: 0;
-    padding: 22px 16px;
+    padding: 18px 16px;
 }
 
 .alumni-name {

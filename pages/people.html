@@ -31,24 +31,29 @@ title: SRC Lab.
             {% endfor %} 
         </div>
 
-        <!-- <br>
-        <hr>
-        <br>
+        <hr class="alumni-divider">
 
-        <h2 class="Lecture"> Alumni </h2> <br>
-        <div class="row justify-content-center align-items-stretch">
+        <section class="alumni-section">
+            <h2 class="Lecture">Alumni</h2>
+            <div class="row alumni-list">
             {% for person in site.data.people.alumni %}
-            <div class="person col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
-                <img src="{{ person.photo }}" alt="photo" class="person-photo img-circle" width="200px">
-                
-                {% if person.link %}
-                <h3 class="person-name"> <a href="{{ person.link }}"> <b> {{ person.name }} </b> </a> </h3> 
-                {% else %}
-                <h3 class="person-name"> <b>{{ person.name }}</b> </h3>
-                {% endif %}
+                <div class="col-xs-12 col-sm-6 col-md-4 alumni-entry">
+                    {% if person.link %}
+                    <h3 class="alumni-name"><a href="{{ person.link }}"><b>{{ person.name }}</b></a></h3>
+                    {% else %}
+                    <h3 class="alumni-name"><b>{{ person.name }}</b></h3>
+                    {% endif %}
+
+                    {% if person.role %}
+                    <p class="alumni-role">{{ person.role }}</p>
+                    {% endif %}
+
+                    {% if person.job %}
+                    <p class="alumni-job">{{ person.job }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
             </div>
-            {% endfor %} 
-            <div class="w-100"></div>
-        </div> -->
+        </section>
     </div>
 </div>

@@ -5,15 +5,25 @@
   link: "/pages/taejune.html"
   email: taejune.park *at* jnu.ac.kr
 
-- name: Daehee Kang
-  photo: "/image/people/010_daeheekang.png"
-  role: Master degree candidate
-  email: meohee *at* jnu.ac.kr
-
 - name: Sooyeon Kim
   photo: "/image/people/003_sooyeonkim.jpg"
-  role: Master degree candidate
+  role: PhD-Master integrated
   email: rlatndus6205 *at* jnu.ac.kr
+
+- name: Juyeon Jeong
+  photo: "/image/people/011_juyeonjeong.jpg"
+  role: Bachelor-Master integrated
+  email:  siddl1020 *at* jnu.ac.kr
+
+- name: Sieun Yang
+  photo: "/image/people/012_sieunyang.jpg"
+  role: Bachelor-Master integrated
+  email: didtldms2525 *at* jnu.ac.kr
+
+- name: Gyeongjun Kim
+  photo: "/image/people/015_gyeongjunkim.png"
+  role: Bachelor-Master integrated
+  email: 202144 *at* jnu.ac.kr
 
 - name: Seongsu Moon
   photo: "/image/people/004_seongsumoon.jpg"
@@ -25,16 +35,6 @@
   role: Undergraduate Researcher
   email: 195533 *at* jnu.ac.kr
 
-- name: Juyeon Jeong
-  photo: "/image/people/011_juyeonjeong.jpg"
-  role: Undergraduate Researcher
-  email:  siddl1020 *at* jnu.ac.kr
-
-- name: Sieun Yang
-  photo: "/image/people/012_sieunyang.jpg"
-  role: Undergraduate Researcher
-  email: didtldms2525 *at* jnu.ac.kr
-
 - name: Ahyoung Jo
   photo: "/image/people/013_ahyoungjo.jpg"
   role: Undergraduate Researcher
@@ -44,16 +44,6 @@
   photo: "/image/people/014_seungyongcho.jpg"
   role: Undergraduate Researcher
   email: csy8997 *at* jnu.ac.kr
-
-- name: Gyeongjun Kim
-  photo: "/image/people/015_gyeongjunkim.png"
-  role: Undergraduate Researcher
-  email: 202144 *at* jnu.ac.kr
-
-- name: Dongjun Kim
-  photo: "/image/people/016_dongjunkim.jpg"
-  role: Undergraduate Researcher
-  email: kdjun0409 *at* naver.com
 
 - name: Join us!
   photo: "/image/people/empty.png"

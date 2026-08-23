@@ -1,4 +1,9 @@
 ---
+- title: SYMMETRA&#58; Semantic prompt sanitization for end-to-end utility-preserving privacy protection in LLM interactions
+  author: Seongsu Moon, Juyeon Jeong and Taejune Park
+  where: The 2026 Conference on Empirical Methods in Natural Language Processing
+  abbr: EMNLP'26
+  date: Oct. 2026.
 
 - title: RAGNAROS&#58; Large-scale regex processing acceleration with neural networks for DPI
   author: Sebin Jo and Taejune Park

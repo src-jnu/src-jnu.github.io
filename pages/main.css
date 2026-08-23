@@ -565,6 +565,35 @@ h3 {
     word-break: break-word;
 }
 
+.alumni-divider {
+    margin: 18px 0 36px;
+    border: 0;
+    border-top: 1px solid #d9d9d9;
+}
+
+.alumni-list {
+    margin-top: 22px;
+}
+
+.alumni-entry {
+    margin-bottom: 28px;
+}
+
+.alumni-name {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.alumni-role {
+    margin-bottom: 4px;
+}
+
+.alumni-job {
+    margin-bottom: 0;
+    color: #555;
+    font-size: 14px;
+}
+
 .pub-card {
     position: relative;
     margin-bottom: 14px;

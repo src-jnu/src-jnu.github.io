@@ -1,4 +1,11 @@
 ---
+
+- title: MARIO&#58; Multi-stage adapter for reducing privacy leakage in split learning through representation exposure control
+  author: Seongsu Moon and Taejune Park
+  where: IEEE Annual Computer Security Applications Conference (ACSAC) 2026
+  abbr: ACSAC'26
+  date: Dec. 2026.
+
 - title: SYMMETRA&#58; Semantic prompt sanitization for end-to-end utility-preserving privacy protection in LLM interactions
   author: Seongsu Moon, Juyeon Jeong and Taejune Park
   where: The 2026 Conference on Empirical Methods in Natural Language Processing-Findings

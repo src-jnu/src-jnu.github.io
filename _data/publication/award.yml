@@ -1,54 +1,71 @@
 ---
-- title: Best Paper Award 
-  host: Cyber Security Conference at HONAM 2025
-  grade: 
-#  owner: 정주연
-  date: Sept. 2025
+- title: Grand Prize (Minister of Science and ICT Award)
+  host: 2026 Honam Regional Cybersecurity Hackathon
+  grade: 1st Place
+  owner: Myeongjin Shin, Seungyong Cho
+  date: Nov. 2026
+
+- title: Encouragement Award
+  host: 2026 Cybersecurity Paper Competition
+  grade: Honorable Mention (Technical Track)
+  owner: Seongsu Moon
+  date: Nov. 2026
+
+- title: Top Excellence Award
+  host: 2026 AI Privacy Challenge
+  grade: 1st Place
+  owner: Gyeongjun Kim, Ahyoung Jo, Sieun Yang
+  date: Aug. 2026
 
 - title: Best Paper Award 
   host: Cyber Security Conference at HONAM 2025
   grade: 
-#  owner: 정주연
+  owner: Juyeon Jeong
   date: Sept. 2025
 
-- title: Best Paper Award 
+- title: Excellence Paper Award 
   host: Cyber Security Conference at HONAM 2025
   grade: 
-#  owner: 김수연
+  owner: Juyeon Jeong
+  date: Sept. 2025
+
+- title: Excellence Paper Award 
+  host: Cyber Security Conference at HONAM 2025
+  grade: 
+  owner: Sooyeon Kim
   date: Sept. 2025
 
 - title: AI Champion Top 100
   host: Ministry of Science and ICT
   grade: 
-#  owner: 현채을
   date: Sept. 2025
 
-- title: Best Paper Award 
+- title: Excellence Paper Award 
   host: Cyber Security Conference at HONAM 2024
   grade: 
-#  owner: 현채을
+  owner: Myungjine Shin, Taejune Park
   date: Oct. 2024
 
-- title: Best Paper Award 
+- title: Excellence Paper Award 
   host: The Korean Institute of Communications and Information Science (KICS)
   grade: 
-#  owner: 문성수
+  owner: Seongsu Moon
   date: Jun. 2023
 
 - title:  2022 AI system development competition (2022년 인공지능 시스템개발 경진대회)
   host: COSS (인공지능혁신공유대학사업단)
   grade: Grand prize (1st)
-#  owner: 김수현
+  owner: Sooyeon Kim, Seongsu Moon
   date: Nov. 2022
 
 - title: Best Paper Award 
   host: The Korea Institute of Information Security and Cryptology (KIISC) at Honam
   grade: 
-#  owner: 박태준
+  owner: Taejune Park
   date: Nov. 2021
 
 - title: 2021 Cyber Security Paper Award (2021 사이어안보(보안) 논문 공모전)
   host: The Korea Institute of Information Security and Cryptology (KIISC)
   grade: Encourage prize (4nd)
-# owner: 박태준
+  owner: Taejune Park
   date: Oct. 2021

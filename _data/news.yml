@@ -1,10 +1,21 @@
 ---
+- title: Seongsu Moon won the Encouragement Award in the Technical Track at the 2026 Cybersecurity Paper Competition!
+  date: 2026-11-06
+
+- title: Myeongjin Shin and Seungyong Cho won the Grand Prize (Minister of Science and ICT Award) at the 2026 Honam Regional Cybersecurity Hackathon!
+  date: 2026-11-07
+
 - title: Seonghyeon Jeon joined our lab! Welcome! 
   date: 2026-09-17
 
 - title: Our paper, entitled "MARIO&#58; Multi-stage adapter for reducing privacy leakage in split learning through representation exposure control", has been accepted to ACSAC 2026!
   date: 2026-09-09
   
+- title: Gyeongjun Kim, Ahyoung Jo, and Sieun Yang won the Top Excellence Award at the 2026 AI Privacy Challenge!
+  date: 2026-08-29
+  nlink: "https://www.news2day.co.kr/article/20260901500122"
+
+
 - title: Our paper, entitled "SYMMETRA&#58; Semantic prompt sanitization for end-to-end utility-preserving privacy protection in LLM interactions", has been accepted to EMNLP 2026-Findings!
   date: 2026-08-21
 

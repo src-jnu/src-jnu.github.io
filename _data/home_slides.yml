@@ -2,17 +2,12 @@
 # Slides appear in the order listed here. Add or remove entries as needed.
 # Use logo: true to fit a logo inside the frame without cropping.
 - image: /image/src/group-emnlp2026.jpg
-  alt: SRC Lab group photo at EMNLP 2026
 
 - image: /image/src/group-kics2026w.jpg
-  alt: SRC Lab group photo at KICS 2026 winter
 
 - image: /image/src/group-aifesta25.jpg
-  alt: SRC Lab at AI Festa 2025
 
 - image: /image/src/group-oct25.jpg
-  alt: SRC Lab at AI Festa 2025
 
 - image: /image/src/logo_blue.png
-  alt: SRC Lab logo
   logo: true

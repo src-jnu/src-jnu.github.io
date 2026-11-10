@@ -28,8 +28,10 @@ title: SRC Lab.
           <div class="home-slider">
             <ul class="home-slides">
               {% for slide in home_slides %}
+              {% assign default_alt = 'SRC Lab photo' %}
+              {% if slide.logo %}{% assign default_alt = 'SRC Lab logo' %}{% endif %}
               <li class="home-slide{% if forloop.first %} is-active{% endif %}{% if slide.logo %} logo-slide{% endif %}">
-                <img src="{{ slide.image | escape }}" alt="{{ slide.alt | escape }}">
+                <img src="{{ slide.image | escape }}" alt="{{ slide.alt | default: default_alt | escape }}">
               </li>
               {% endfor %}
             </ul>

@@ -10,8 +10,8 @@ title: SRC Lab.
           <p class="home-eyebrow">Secure and Reliable Computing Lab.</p>
           <h1 class="home-title">Welcome to the SRC Lab.</h1>
           <p class="home-lead">
-            The SRC Lab. at Chonnam National University studies secure and reliable AI, network,
-            and computing systems for trustworthy cloud and edge environments. We design practical
+            The SRC Lab. at Chonnam National University conducts research in networks, AI, and systems,
+            with a focus on security and reliability in cloud and edge environments. We design practical
             security architectures, high-performance network systems, and AI-enabled security
             technologies that bridge research ideas and deployable systems.
           </p>
@@ -22,34 +22,31 @@ title: SRC Lab.
             </a>
           </p>
         </div>
+        {% assign home_slides = site.data.home_slides %}
+        {% if home_slides.size > 0 %}
         <div class="col-sm-6">
           <div class="home-slider">
             <ul class="home-slides">
-              <li class="home-slide is-active">
-                <img src="/image/src/group-kics2026w.jpg" alt="SRC Lab group photo at KICS 2026 winter">
+              {% for slide in home_slides %}
+              <li class="home-slide{% if forloop.first %} is-active{% endif %}{% if slide.logo %} logo-slide{% endif %}">
+                <img src="{{ slide.image | escape }}" alt="{{ slide.alt | escape }}">
               </li>
-              <li class="home-slide">
-                <img src="/image/src/group-aifesta25.jpg" alt="SRC Lab at AI Festa 2025">
-              </li>
-              <li class="home-slide">
-                <img src="/image/src/group-oct25.jpg" alt="SRC Lab group photo">
-              </li>
-              <li class="home-slide logo-slide">
-                <img src="/image/src/logo_blue.png" alt="SRC Lab logo">
-              </li>
+              {% endfor %}
             </ul>
 
+            {% if home_slides.size > 1 %}
             <button type="button" class="slide-arrow slide-arrow-left" aria-label="Previous slide"></button>
             <button type="button" class="slide-arrow slide-arrow-right" aria-label="Next slide"></button>
 
             <ol class="home-slide-dots">
-              <li><button type="button" class="is-active" aria-label="Show slide 1"></button></li>
-              <li><button type="button" aria-label="Show slide 2"></button></li>
-              <li><button type="button" aria-label="Show slide 3"></button></li>
-              <li><button type="button" aria-label="Show slide 4"></button></li>
+              {% for slide in home_slides %}
+              <li><button type="button"{% if forloop.first %} class="is-active"{% endif %} aria-label="Show slide {{ forloop.index }}"></button></li>
+              {% endfor %}
             </ol>
+            {% endif %}
           </div>
         </div>
+        {% endif %}
       </div>
     </section>
 
@@ -88,6 +85,8 @@ title: SRC Lab.
     if (!slider) return;
 
     var slides = slider.querySelectorAll('.home-slide');
+    if (slides.length < 2) return;
+
     var dots = slider.querySelectorAll('.home-slide-dots button');
     var prev = slider.querySelector('.slide-arrow-left');
     var next = slider.querySelector('.slide-arrow-right');
